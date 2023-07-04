@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Light Leaker : Advanced Techniques</title>
+<style type="text/css">
+@font-face { font-family: 'TurnpikeRegular'; src: url('includes/turnpike-webfont.eot'); src: url('includes/turnpike-webfont.eot?#iefix') format('embedded-opentype'),  url('includes/turnpike-webfont.woff') format('woff'),  url('includes/turnpike-webfont.ttf') format('truetype'),  url('includes/turnpike-webfont.svg#TurnpikeRegular') format('svg'); font-weight: normal; font-style: normal; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { background: transparent; border: 0; margin: 0; padding: 0; /*vertical-align: baseline;*/ }
+body { line-height: 1; }
+/*h1, h2, h3, h4, h5, h6 { clear: both; font-weight: normal; }*/
+ol, ul { list-style: none; }
+blockquote { quotes: none; }
+blockquote:before, blockquote:after { content: ''; content: none; }
+del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+a img { border: none; }
+/* content styles */
+body { background: url(images/main_bg_tile.jpg); font: 13px/18px Verdana, Geneva, sans-serif; color: #000; }
+#bg-top { margin: 0 0 0 53px; padding: 18px 0 0 0; clear: both; background: url(images/content-bg-top.png) no-repeat left top; }
+#bg-top-spacer { height: 21px; background: url(images/content-bg-sidebar.gif) repeat-y right top; }
+#bg-bottom { margin: 0 0 0 0; padding: 0 0 27px 0; clear: both; background: url(images/content-bg-btm.png) no-repeat left bottom; }
+#bg-bottom-spacer { clear: both; height: 33px; background: url(images/content-bg-sidebar.gif) repeat-y right top; }
+#main-content { float: left; background: #fbfbfb url(images/content-bg-tile.png) repeat-y; }
+#main-content-bg { float: left; background: url(images/content-bg-sidebar.gif) repeat-y right top; }
+#page-content { margin: 0 306px 0 0; padding: 30px 0 30px 30px; }
+#page-navigation { float: right; margin: 13px 10px 0 0; width: 255px; border: 2px solid #fbfbfb; }
+#page-navigation h3 { padding: 9px 13px; font: bold 12px 'TurnpikeRegular', Verdana, Geneva, sans-serif; color: #000; background: #fbfbfb; text-align: center; text-transform: uppercase; }
+#page-navigation h4 { padding: 7px 20px; font: normal 11px 'TurnpikeRegular', Verdana, Geneva, sans-serif; color: #000; text-transform: uppercase; }
+#page-navigation h4 a { color: #000; }
+#page-navigation p { padding: 3px 20px; font-weight: bold; }
+#page-navigation p a { color: #fbfbfb; }
+#page-navigation hr { margin: 3px 20px; border: 1px solid #fbfbfb; background: none; height: 1; }
+h1 { padding: 25px 30px; text-transform: uppercase; background: #8c8c8c; color: #fbfbfb; font: bold 20px 'TurnpikeRegular', Verdana, Geneva, sans-serif; }
+h2 { text-transform: uppercase; font: bold 14px 'TurnpikeRegular', Verdana, Geneva, sans-serif; }
+ul { margin: 0 0 12px 28px; list-style: disc; }
+ol { margin: 0 0 12px 28px; list-style: decimal; }
+p { padding: 0 0 12px 0; }
+a { color: #8c8c8c; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.red-text { color: #8c8c8c; }
+</style>
+</head>
+
+<body>
+<div id="bg-top">
+  <div id="bg-top-spacer">&nbsp;</div>
+  <div id="bg-bottom">
+    <div id="main-content">
+      <div id="main-content-bg">
+        <h1>Let's Learn About Light Leaker</h1>
+        <div id="page-navigation">
+          <h3>Table of Contents</h3>
+          <h4><a href="index.html">Introduction</a></h4>
+          <p><a href="index.html#welcome">- Welcome</a></p>
+          <p><a href="index.html#intro">- Introduction</a></p>
+          <hr>
+          <h4><a href="install.html">Installation</a></h4>
+          <p><a href="install.html#hosts">- Host Requirements</a></p>
+          <p><a href="install.html#system">- System Requirements</a></p>
+          <p><a href="install.html#install">- How to Install</a></p>
+          <hr>
+          <h4><a href="register.html">Plug-In Activation</a></h4>
+          <hr>
+          <h4><a href="start.html">Getting Started</a></h4>
+          <p><a href="start.html">- User Interface</a></p>
+          <p><a href="settings.html">- Settings</a></p>
+          <p><a href="advanced.html">- Advanced Techniques</a></p>
+          <hr>
+          <h4><a href="trouble.html">Troubleshooting</a></h4>
+          <hr>
+          <p><a href="trouble.html#install">- Installation</a></p>
+          <p><a href="trouble.html#register">- Registration</a></p>
+          <p><a href="trouble.html#perform">- Performance</a></p>
+          <p><a href="trouble.html#errors">- Error Messages</a></p>
+          <hr>
+          <h4><a href="version.html">Version History</a></h4>
+          <hr>
+          <h4><a href="legal.html">Legal</a></h4>
+        </div>
+        <div id="page-content"> 
+          <!-- EDITABLE CONTENT START -->
+       <a name="ink"></a><h2>Advanced Techniques</h2><br>
+<p>Once you've mastered all the controls in Light Leaker and you're ready to take your images to the next level, below are some advanced techniques you can apply as you work:
+</p>
+<p>
+<strong>Effect-Multiplier</strong><br>
+After you've run Light Leaker on your image, load your newly modified image into Light Leaker and tweak it even further by applying even more great effects!
+</p>
+<p>
+<strong>Prismatic Light Leaks</strong><br>
+After you've run Light Leaker on your image, load your newly modified image into Light Leaker and simply click the color swatch icon to the right of the Saturation slider to launch the color picker to select a new color for your next light leak. Repeat as desired to create a colorful and creative atmospheric effect on any image!
+</p>
+<p>
+<strong>ActionScripting</strong><br>
+Light Leaker is fully scriptable and allows you to create an unlimited about of automated settings for your work. Follow our guide below to create your own ActionScripts for Photoshop.
+</p>
+<p>
+<strong>How to Write an Action with Light Leaker</strong>
+<ol>
+<li>Open an image.</li>
+<li>In Photoshop's Actions palette, press the button "Create New Action"</li>
+<li>In pop-up window, simply type the name of the new action and press the "Record" button.</li>
+<li>Select the menu item Filter > Mister Retro > Light Leaker to launch Light Leaker.</li>
+<li>Adjust the filter as desired.</li>
+<li>Press OK to apply the filter.</li>
+<li>In Photoshop's Actions palette, press the button "Stop Playing/Recording"
+</ol>
+</p>
+<p>
+<strong>How to Play the Action</strong>
+<ol>
+<li>Open an image.</li>
+<li>In Photoshop's Actions palette, select the desired action you just recorded.</li>
+<li>In this window press the "Play Selection" button and action will be applied to your image.</li>
+</ol>
+</p>
+<p>
+<strong>How to Install/Export a New Action</strong>
+<ol>
+<li>In Photoshop's Actions palette menu, select the item "Load Actions" and a file chooser dialog will appear.</li>
+<li>Simply select the .atn file what you want to import in Photoshop and click OK.<br>
+<li>The new action will appear in Photoshop's Action palette ready to play.</li>
+<li>Similarly, you can export any action as an .atn file by selecting the menu item "Save Action"</li>
+</ol>
+</p>
+<p>
+<h2>Problems? Visit our <a href="trouble.html">Troubleshooting Section</a> . . .</h2>
+</p>
+          <!-- EDITABLE CONTENT END --> 
+        </div>
+      </div>
+    </div>
+    <div id="bg-bottom-spacer">&nbsp;</div>
+  </div>
+</div>
+</body>
+</html>

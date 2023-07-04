@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Spot Wash : Halftone : Troubleshooting</title>
+<style type="text/css">
+@font-face { font-family: 'TurnpikeRegular'; src: url('includes/turnpike-webfont.eot'); src: url('includes/turnpike-webfont.eot?#iefix') format('embedded-opentype'),  url('includes/turnpike-webfont.woff') format('woff'),  url('includes/turnpike-webfont.ttf') format('truetype'),  url('includes/turnpike-webfont.svg#TurnpikeRegular') format('svg'); font-weight: normal; font-style: normal; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { background: transparent; border: 0; margin: 0; padding: 0; /*vertical-align: baseline;*/ }
+body { line-height: 1; }
+/*h1, h2, h3, h4, h5, h6 { clear: both; font-weight: normal; }*/
+ol, ul { list-style: none; }
+blockquote { quotes: none; }
+blockquote:before, blockquote:after { content: ''; content: none; }
+del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+td { border-width: 2px; padding: 4px; border-style: solid; }
+a img { border: none; }
+/* content styles */
+body { background: url(images/main_bg_tile.png); font: 13px/18px Verdana, Geneva, sans-serif; color: #000; }
+#bg-top { margin: 0 0 0 53px; padding: 18px 0 0 0; clear: both; background: url(images/content-bg-top.png) no-repeat left top; }
+#bg-top-spacer { height: 21px; background: url(images/content-bg-sidebar.gif) repeat-y right top; }
+#bg-bottom { margin: 0 0 0 0; padding: 0 0 27px 0; clear: both; background: url(images/content-bg-btm.png) no-repeat left bottom; }
+#bg-bottom-spacer { clear: both; height: 33px; background: url(images/content-bg-sidebar.gif) repeat-y right top; }
+#main-content { float: left; background: #fffee8 url(images/content-bg-tile.png) repeat-y; }
+#main-content-bg { float: left; background: url(images/content-bg-sidebar.gif) repeat-y right top; }
+#page-content { margin: 0 306px 0 0; padding: 30px 0 30px 30px; }
+#page-navigation { float: right; margin: 13px 10px 0 0; width: 255px; border: 2px solid #fffee8; }
+#page-navigation h3 { padding: 9px 13px; font: bold 12px 'TurnpikeRegular', Verdana, Geneva, sans-serif; color: #000; background: #fffee8; text-align: center; text-transform: uppercase; }
+#page-navigation h4 { padding: 7px 20px; font: normal 11px 'TurnpikeRegular', Verdana, Geneva, sans-serif; color: #000; text-transform: uppercase; }
+#page-navigation h4 a { color: #000; }
+#page-navigation p { padding: 3px 20px; font-weight: bold; }
+#page-navigation p a { color: #fffee8; }
+#page-navigation hr { margin: 3px 20px; border: 1px solid #fffee8; background: none; height: 1; }
+h1 { padding: 25px 30px; text-transform: uppercase; background: #90acb2; color: #fffee8; font: bold 20px 'TurnpikeRegular', Verdana, Geneva, sans-serif; }
+h2 { text-transform: uppercase; font: bold 14px 'TurnpikeRegular', Verdana, Geneva, sans-serif; }
+ul { margin: 0 0 12px 28px; list-style: disc; }
+p { padding: 0 0 12px 0; }
+a { color: #990000; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.red-text { color: #990000; }
+</style>
+</head>
+
+<body>
+<div id="bg-top">
+  <div id="bg-top-spacer">&nbsp;</div>
+  <div id="bg-bottom">
+    <div id="main-content">
+      <div id="main-content-bg">
+        <h1>Let's Learn About Spot Wash : Halftone</h1>
+        <div id="page-navigation">
+          <h3>Table of Contents</h3>
+          <h4><a href="index.html">Introduction</a></h4>
+          <p><a href="index.html#welcome">- Welcome</a></p>
+          <p><a href="index.html#intro">- Introduction</a></p>
+          <hr>
+          <h4><a href="install.html">Installation</a></h4>
+          <p><a href="install.html#hosts">- Host Requirements</a></p>
+          <p><a href="install.html#system">- System Requirements</a></p>
+          <p><a href="install.html#install">- How to Install</a></p>
+          <hr>
+          <h4><a href="register.html">Plug-In Activation</a></h4>
+          <hr>
+          <h4><a href="start.html">Getting Started</a></h4>
+          <p><a href="start.html">- User Interface</a></p>
+          <p><a href="wash.html">- Wash Settings</a></p>
+          <p><a href="coverage.html">- Coverage Settings</a></p>
+          <p><a href="paper.html">- Paper Settings</a></p>
+          <p><a href="advanced.html">- Advanced Techniques</a></p>
+          <hr>
+          <h4><a href="trouble.html">Troubleshooting</a></h4>
+          <hr>
+          <p><a href="trouble.html#install">- Installation</a></p>
+          <p><a href="trouble.html#register">- Registration</a></p>
+          <p><a href="trouble.html#perform">- Performance</a></p>
+          <p><a href="trouble.html#errors">- Error Messages</a></p>
+          <hr>
+          <h4><a href="version.html">Version History</a></h4>
+          <hr>
+          <h4><a href="legal.html">Legal</a></h4>
+        </div>
+        <div id="page-content"> 
+          <!-- EDITABLE CONTENT START -->
+<h2>Troubleshooting</h2><br>
+We've documented the most commonly asked tech support questions here for your convenience.
+</p>
+<p><font color="990000"><strong>If at any time you get stuck or cannot resolve your issue, the fastest way receive a response is by submitting an Online Support Request at: <a href="http://www.misterretro.com/online-support-request" target="_new">http://www.misterretro.com/online-support-request</a></strong></font>
+</p>
+<p>
+<strong>This section covers the following troubleshooting issues:</strong><br>
+<ul>
+<lI><strong>Installation Problems</strong>
+<lI><strong>Performance Issues</strong>
+<lI><strong>Error Messages</strong>
+<a name="install"></a></ul>
+<br>
+<h2>Installation Problems</h2>
+</p>
+<p><strong>Problem: </strong>
+When I try to install, I get an error dialog saying that I don't have privileges or permission to install the software.
+</p>
+<p>
+<strong>Solution: </strong> 
+The installer, like most installation programs, needs to write files to secure folders on your computer. If you use OS X, Windows 2000, Windows XP, Windows Vista, Windows 7, Windows 8 or Windows 8.1 you must have administrator privileges. For information on configuring your user account for these privileges, see your system administrator or your operating system manual.
+</p>
+<p>
+<strong>Problem:</strong> 
+After installing the plug-ins and starting the graphics host program, the filter does not appear in the Filter or plug-in menu.
+</p>
+<p>
+<strong>Solution:</strong> 
+The filter was not installed in your graphics program's plug-in folder. Find out which folder your host program uses for plug-ins. With Photoshop, you can determine this by going to <strong>Edit > Preferences > Plug-ins</strong>. Then, install the filter again, making sure you select the proper plug-in folder.
+</p>
+<p>
+Also, remember that after installing a new filter, you must restart your graphics host for the plug-ins to become available. With other host programs, consult your user manual for more information about where plug-ins need to be installed and how to access them.
+</p>
+<p>
+<strong>Problem:</strong> 
+My software doesn't work with a graphics program that claims to use Photoshop plug-ins.
+</p>
+<p>
+<strong>Solution:</strong> 
+Some host programs claim to work with all Photoshop plug-ins without testing thoroughly or strictly following the Photoshop plug-in standard. We guarantee performance on all <a href="install.html#hosts">Supported Host Applications</a> only.
+</p>
+<p>
+<strong>Problem:</strong> 
+How do I uninstall my software?
+</p>
+<p>
+<strong>Macintosh Users:</strong> Find the Mister Retro folder in your graphics program's plug-in folder and delete it.
+</p>
+<p>
+<strong>Windows Users:</strong> Run Add/Remove Programs from your Windows Control Panel. Select Spot Wash : Halftone from the program list and click the Add/Remove button. This will remove the program and its components.
+</p>
+<br>
+<a name="register"></a>
+<p><h2>Registration Problems</h2>
+</p>
+<p>
+<strong>Problem:</strong> 
+Plug-in cannot connect to registration server and shows the message: "Unable to connect to registration server at this time. Please try again later or register using the Offline registration method."
+</p>
+<p>
+<strong>Solution:</strong> 
+Check your Internet connection. If an Internet connection is not available then contact our Tech Support to receive an Offline activation code.
+</p>
+<p>
+<strong>Problem:</strong> 
+During registration, the user presses the "Register" button and sees the following message: "Please enter your Name to continue." or "Please enter your Serial Number to continue."
+</p>
+<p>
+<strong>Solution:</strong> 
+Double-check to make sure the field "Name" and "Serial Number" are filled out, they should not be blank.
+</p>
+<p>
+<strong>Problem:</strong> 
+During registration, the user presses the "Register" button and sees the following message: "The Serial Number is invalid. Carefully re-enter the Serial Number you received from us at the time of purchase."
+</p>
+<p>
+<strong>Solution:</strong> 
+The user may have mistyped the Serial Number and should more carefully and attentively insert the Serial Number which can also be copied and pasted. The Serial Number also appears on the receipt that is e-mailed to the user during the order process or via your User Account at Mister Retro at <a href="https://www.misterretro.com/user" target="_new">https://www.misterretro.com/user</a>.
+</p>
+<p>
+<strong>Problem:</strong> 
+During Offline registration the user receives the message: "Please enter your answer to continue."
+</p>
+<p>
+<strong>Solution:</strong> 
+The user should insert the Offline answer they received from Tech Support in the Offline Answer field. Also, double check to make sure the radio button option is set to Offline registration.
+</p>
+<p>
+<strong>Problem:</strong> 
+After launching plug-in the user receives the following message: "Offline Registration has not been completed and the plug-in has been deactivated. You must register the plug-in to reactivate it."
+</p>
+<p>
+<strong>Solution:</strong> 
+The user has chosen the Offline registration type but hasn't completed the registration process for several days since the initial installation and now plug-in will no longer launch. The user should complete the registration process in order to continue using the plug-in.
+</p>
+<p>
+<strong>Problem:</strong> 
+During Offline registration the user receives the message: "The Offline Registration Key has been entered incorrectly or has expired. Please contact technical support to obtain a new Registration Key."
+</p>
+<p>
+<strong>Solution:</strong> 
+Too much time has passed since the user received the Offline registration activation code and the answer has expired or the user has inserted the wrong answer. The user will need to contact Tech Support to receive a new Offline activation code or double check to make sure the existing code was inserted carefully.
+</p>
+<p>
+<strong>Problem:</strong> 
+The user may occasionally receive an error from the Registration Server not listed above.</p>
+<p><strong>Solution:</strong> 
+Please contact Tech Support directly and report the specific error so it may be resolved quickly.</p>
+<br>
+<a name="perform"></a>
+<p><h2>Performance Issues</h2></p>
+<p><strong>Problem:</strong> 
+Spot Wash : Halftone appears grayed out in the <strong>Filter</strong> menu.</p>
+<p>
+<strong>Solution:</strong> 
+Spot Wash : Halftone will become disabled if you are in certain color modes including as Grayscale, Lab or Bitmap or any color mode greater than 8-Bit.</p>
+<p>
+<strong>Problem:</strong> 
+I get a message that my software ran out of memory while rendering the preview.</p>
+<p>
+<strong>Solution:</strong> 
+There are a few things you can do to free up more memory. In Photoshop, the history palette and other features take up a lot of memory. You can free this memory by selecting <strong>Edit > Purge > All</strong>.
+</p>
+<p>To free up even more memory in Photoshop, select Edit > Preferences > Memory & Image Cache. Then, increase the Maximum Used value.</p>
+<p>If you routinely work with huge images, we recommend that you have ten times as much physical RAM as the image size in memory.</p>
+<p>
+<strong>Problem:</strong> 
+Spot Wash : Halftone makes the graphics program or the entire computer crash or freeze up.</p>
+<p>
+<strong>Solution:</strong> 
+Sometimes freezes or crashes occur when your computer runs out of available memory. If you are using Photoshop, you can sometimes free up large amounts of memory by selecting <strong>Edit > Purge > All</strong>.
+</p>
+<p>Also, make sure that your computer system meets the minimum requirements to run our software. Shut down other programs before you run your image editing program, as there might be a conflict between another program and our software. If you notice such a conflict, please try to identify the problem program and inform us of the conflict by visiting the support section as directed at top.
+</p>
+<br>
+<a name="errors"></a>
+<p>
+<h2>Error Messages</h2>
+</p>
+<p><table border="1" width="600" cellspacing="0" cellpadding="4">
+<tr>
+<td align=left valign=top width=50%><font size="-1" face="verdana"><strong>Error Message</strong></font></td>
+<td align=left valign=top width=50%><font size="-1" face="verdana"><strong>User Remedy</strong></font></td>
+</tr>
+<tr>
+<td align=left valign=top width=50%><font size="-1" face="verdana">This host application does not support enough of the Photoshop filter specification for this filter to run.</font></td>
+<td align=left valign=top width=50%><font size="-1" face="verdana">Sorry! Your host graphics program is incompatible with our software. Consult the list of compatible host applications in the Host Requirements section of the Getting Started section.</font></td>
+</tr>
+<tr>
+<td align=left valign=top width=50%><font size="-1" face="verdana">This filter requires editable transparency. Please turn OFF Preserve Transparency in the Layer palette.</font></td>
+<td align=left valign=top width=50%><font size="-1" face="verdana">In the <strong>Layers</strong> tab, deselect the <strong>Lock Transparent Pixels button</strong>.</font></td>
+</tr>
+<tr>
+<td align=left valign=top width=50%><font size="-1" face="verdana">The filter ran out of available memory while rendering the preview image.</font></td>
+<td align=left valign=top width=50%><font size="-1" face="verdana">The history palette and other features take up a lot of memory. In Photoshop, you can free up this memory by selecting<strong> Edit > Purge > All</strong>.</p>
+<p>
+You may not have enough physical memory (RAM) to handle the image that you're working with.<br></font></td>
+</tr>
+</table>
+</p>
+<p><h2>Feel free to review the Spot Wash : Halftone <a href="version.html">Version History</a> . . .</h2>
+          <!-- EDITABLE CONTENT END --> 
+        </div>
+      </div>
+    </div>
+    <div id="bg-bottom-spacer">&nbsp;</div>
+  </div>
+</div>
+</body>
+</html>

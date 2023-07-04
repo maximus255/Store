@@ -1,0 +1,9 @@
+;LaunchBox Installation parameters
+Version = 2.1 ; current version
+NeededSize = 700000; required space in Bytes 
+Copyright = ©2013-2023, AlphaPlugins; copyright
+Intro = The util will be installed; introduction
+CopyIntro = Now Installing AlphaPlugins LaunchBox
+Subfolder = AlphaPlugins;the subfolder for contents
+Congratulation = Congratulations! The software has been successfully installed!
+;end of config

@@ -1,0 +1,9 @@
+;LightLeak Installation parameters
+Version = 1.0 ; current version
+NeededSize = 7000000; required space in Bytes 
+Copyright = ©2016-2023 Mister Retro; copyright
+Intro = The plug-in for Adobe Photoshop CC-2023 will be installed; introduction
+CopyIntro = Now Installing LightLeaker
+Subfolder = MisterRetro;the subfolder for contents
+Congratulation = Congratulations! The software has been successfully installed!
+;end of config

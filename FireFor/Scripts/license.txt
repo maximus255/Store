@@ -1,0 +1,42 @@
+For installation of AlphaPlugins FireFor Plug-in module on One (1) Computer
+
+Electronic End User License Agreement
+
+NOTICE TO USER:  THIS IS A CONTRACT. BY INDICATING YOUR ACCEPTANCE BELOW, YOU ACCEPT ALL THE TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE WITH THE TERMS AND CONDITIONS OF THIS AGREEMENT, DECLINE WHERE INSTRUCTED, AND YOU WILL NOT BE ABLE TO USE THE SOFTWARE.
+
+This AlphaPlugins End User License Agreement (the "Agreement") accompanies software ("Software") and related explanatory written materials 
+("Documentation"). The term "Software" shall also include any upgrades, modified versions, updates, additions, and copies of the Software licensed to you by AlphaPlugins. AlphaPlugins grants to you a nonexclusive license to use the Software and Documentation, provided that you agree to the following:
+
+
+1. 	License.
+	1.1. Single User, Single Location.  The Software may be used by one (1) User on one CPU at a single geographic location.  Installation of the Software on a desktop/workstation and a laptop/notebook computer owned by the licensed user is permissible provided that only one installation of the Software is in use at any time.
+
+	1.2. Devices.  Use of the Software on a server is not permitted.  If you wish to distribute the Software via a server or use the Software at more than one (1) Geographic location, you must purchase a license upgrade.
+
+	1.3. Additional License. If your installation needs or your actual usage exceeds that permitted under this Agreement, you must contact admin@alphaplugins.com to purchase an upgrade to this basic End User License.
+
+	1.4. No Distribution. Except as may be expressly permitted herein, you may not distribute, sell, modify, adapt, translate, reverse engineer, decompile, disassemble, alter the embedding bits, translate into other formats or otherwise copy the Software without the express written consent of AlphaPlugins.  
+
+	1.5. Lending Prohibited. Lending of a copy of the Software to any service bureau or printer is prohibited.  
+
+	1.6. Back Up Permitted. You are permitted to make a single back-up copy. The Software or documentation may not be sublicensed, sold, leased, rented, lent, or given away to another person or entity.
+
+
+2.	Use of the Software. 
+You may: 
+	2.1.	Install the Software in a single location on a hard disk or other storage device of up to the number of computers indicated in the upper left hand corner ("Permitted Number of Computers") of this Agreement.
+
+	2.2.	Make one backup copy of the Software, provided your backup copy is not installed or used on any computer. 
+
+	2.3.	HOME USE.  The primary user of each computer on which the Software is installed or used may also install the Software on one home or portable computer. However, the Software may not be used on the secondary computer by another person at the same time the Software on the primary computer is being used. 
+
+3.	Copyright.  The Software is owned by AlphaPlugins and its suppliers, and its structure, organization and code are the valuable trade secrets of AlphaPlugins and its suppliers. The Software is also protected by United States Copyright Law and International Treaty provisions. You must treat the Software just as you would any other copyrighted material, such as a book. You may not copy the Software or the Documentation, except as set forth in the "Use of the Software" section. Any copies that you are permitted to make pursuant to this Agreement must contain the same copyright and other proprietary notices that appear on or in the Software. You agree not to modify, adapt or translate the Software. You 
+also agree not to reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of the Software. Trademarks shall be used in accordance with accepted trademark practice, including identification of trademark owner's name. Trademarks can only be used to identify printed output produced by the Software. Such use of any trademark does not give you any rights of ownership in that trademark. Except as stated above, this Agreement does not grant you any intellectual property rights in the Software.
+
+4.	Transfer.  You may not rent, lease, sublicense or lend the Software or Documentation. You may, however, transfer all your rights to use the Software to another person or legal entity provided (1) that you transfer this Agreement, the Software, including all copies, updates and prior versions and all Documentation to such person or entity, (2) that you retain no copies, including copies stored on a computer, and (3) that the receiving party accept the terms and conditions of this Agreement.
+
+5.	Limitation of Liability.  IN NO EVENT WILL AlphaPlugins OR ITS SUPPLIERS BE LIABLE TO YOU FOR ANY CONSEQUENTIAL, INCIDENTAL OR SPECIAL DAMAGES, INCLUDING ANY LOST PROFITS OR LOST SAVINGS, EVEN IF AN AlphaPlugins REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY ANY THIRD PARTY. SOME STATES OR JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL, CONSEQUENTIAL OR SPECIAL DAMAGES, SO THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.
+
+6.	Governing Law and General Provisions.  This Agreement will be governed by the laws in force in the State of New Jersey excluding the application of its conflicts of law rules. This Agreement will not be governed by the United Nations Convention on Contracts for the International Sale of Goods, the application of which is expressly excluded. If any part of this Agreement is found void and unenforceable, it will not affect the validity of the balance of the Agreement, which shall remain valid and enforceable according to its terms. You agree that the Software will not be shipped, transferred or exported into any country or used in any manner prohibited by the United States Export dministration Act or any other export laws, restrictions or regulations. This Agreement shall automatically terminate upon failure by you to comply with its terms. This Agreement may only be modified in writing signed by an authorized officer of AlphaPlugins.
+
+Adobe, the Adobe logo are trademarks of Adobe Systems Incorporated.Macintosh is a trademark of Apple Computer, Inc. registered in the U.S. and other countries. Windows is either a registered trademark or a trademark of Microsoft Corporation. All other products or name brands are trademarks of their respective holders.

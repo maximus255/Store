@@ -1,0 +1,9 @@
+;MachineWashDeluxe Volume3 Installation parameters
+Version = 2.0 ; current version
+NeededSize = 7000000; required space in Bytes 
+Copyright = ©2009-2020 MisterRetro; copyright
+Intro = The Machine Wash Deluxe Texture Set Five will be installed; introduction
+CopyIntro = Installing installing MWD Textures
+Subfolder = MisterRetro;the subfolder for contents
+Congratulation = Congratulations! The software has been successfully installed!
+;end of config

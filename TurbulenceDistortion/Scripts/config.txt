@@ -1,0 +1,9 @@
+;TurbulenceDistortion Installation parameters
+Version = 1.0 ; current version
+NeededSize = 700000; required space in Bytes 
+Copyright = ©2017-2023, AlphaPlugins; copyright
+Intro = The plug-in for Adobe Photoshop CC..CC2023 (Intel/M1) will be installed; introduction
+CopyIntro = Now Installing TurbulenceDistortion
+Subfolder = AlphaPlugins;the subfolder for contents
+Congratulation = Congratulations! The software has been successfully installed!
+;end of config

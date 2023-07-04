@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Light Leaker : Light Leaker Settings</title>
+<style type="text/css">
+@font-face { font-family: 'TurnpikeRegular'; src: url('includes/turnpike-webfont.eot'); src: url('includes/turnpike-webfont.eot?#iefix') format('embedded-opentype'),  url('includes/turnpike-webfont.woff') format('woff'),  url('includes/turnpike-webfont.ttf') format('truetype'),  url('includes/turnpike-webfont.svg#TurnpikeRegular') format('svg'); font-weight: normal; font-style: normal; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { background: transparent; border: 0; margin: 0; padding: 0; /*vertical-align: baseline;*/ }
+body { line-height: 1; }
+/*h1, h2, h3, h4, h5, h6 { clear: both; font-weight: normal; }*/
+ol, ul { list-style: none; }
+blockquote { quotes: none; }
+blockquote:before, blockquote:after { content: ''; content: none; }
+del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+a img { border: none; }
+/* content styles */
+body { background: url(images/main_bg_tile.jpg); font: 13px/18px Verdana, Geneva, sans-serif; color: #000; }
+#bg-top { margin: 0 0 0 53px; padding: 18px 0 0 0; clear: both; background: url(images/content-bg-top.png) no-repeat left top; }
+#bg-top-spacer { height: 21px; background: url(images/content-bg-sidebar.gif) repeat-y right top; }
+#bg-bottom { margin: 0 0 0 0; padding: 0 0 27px 0; clear: both; background: url(images/content-bg-btm.png) no-repeat left bottom; }
+#bg-bottom-spacer { clear: both; height: 33px; background: url(images/content-bg-sidebar.gif) repeat-y right top; }
+#main-content { float: left; background: #fbfbfb url(images/content-bg-tile.png) repeat-y; }
+#main-content-bg { float: left; background: url(images/content-bg-sidebar.gif) repeat-y right top; }
+#page-content { margin: 0 306px 0 0; padding: 30px 0 30px 30px; }
+#page-navigation { float: right; margin: 13px 10px 0 0; width: 255px; border: 2px solid #fbfbfb; }
+#page-navigation h3 { padding: 9px 13px; font: bold 12px 'TurnpikeRegular', Verdana, Geneva, sans-serif; color: #000; background: #fbfbfb; text-align: center; text-transform: uppercase; }
+#page-navigation h4 { padding: 7px 20px; font: normal 11px 'TurnpikeRegular', Verdana, Geneva, sans-serif; color: #000; text-transform: uppercase; }
+#page-navigation h4 a { color: #000; }
+#page-navigation p { padding: 3px 20px; font-weight: bold; }
+#page-navigation p a { color: #fbfbfb; }
+#page-navigation hr { margin: 3px 20px; border: 1px solid #fbfbfb; background: none; height: 1; }
+h1 { padding: 25px 30px; text-transform: uppercase; background: #8c8c8c; color: #fbfbfb; font: bold 20px 'TurnpikeRegular', Verdana, Geneva, sans-serif; }
+h2 { text-transform: uppercase; font: bold 14px 'TurnpikeRegular', Verdana, Geneva, sans-serif; }
+ul { margin: 0 0 12px 28px; list-style: disc; }
+p { padding: 0 0 12px 0; }
+a { color: #8c8c8c; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.red-text { color: #8c8c8c; }
+</style>
+</head>
+
+<body>
+<div id="bg-top">
+  <div id="bg-top-spacer">&nbsp;</div>
+  <div id="bg-bottom">
+    <div id="main-content">
+      <div id="main-content-bg">
+        <h1>Let's Learn About Light Leaker</h1>
+        <div id="page-navigation">
+          <h3>Table of Contents</h3>
+          <h4><a href="index.html">Introduction</a></h4>
+          <p><a href="index.html#welcome">- Welcome</a></p>
+          <p><a href="index.html#intro">- Introduction</a></p>
+          <hr>
+          <h4><a href="install.html">Installation</a></h4>
+          <p><a href="install.html#hosts">- Host Requirements</a></p>
+          <p><a href="install.html#system">- System Requirements</a></p>
+          <p><a href="install.html#install">- How to Install</a></p>
+          <hr>
+          <h4><a href="register.html">Plug-In Activation</a></h4>
+          <hr>
+          <h4><a href="start.html">Getting Started</a></h4>
+          <p><a href="start.html">- User Interface</a></p>
+          <p><a href="settings.html">- Settings</a></p>
+          <p><a href="advanced.html">- Advanced Techniques</a></p>
+          <hr>
+          <h4><a href="trouble.html">Troubleshooting</a></h4>
+          <hr>
+          <p><a href="trouble.html#install">- Installation</a></p>
+          <p><a href="trouble.html#register">- Registration</a></p>
+          <p><a href="trouble.html#perform">- Performance</a></p>
+          <p><a href="trouble.html#errors">- Error Messages</a></p>
+          <hr>
+          <h4><a href="version.html">Version History</a></h4>
+          <hr>
+          <h4><a href="legal.html">Legal</a></h4>
+        </div>
+        <div id="page-content"> 
+          <!-- EDITABLE CONTENT START -->
+<a name="basic"></a><h2>Light Leaker Settings</h2><br>
+<p>Light Leaker first performs calculations on the image and applies either the default settings or the Last Used Settings to the loaded image. Let's look specifically at the Light Leaker settings to see how quickly and easy it is to create and apply the Light Leaker effect, then we'll look at ways to refine this with the Intensity and Saturation effects!
+</p>
+<p>
+<table width="967"><tr><td>
+<img src="images/llk_gui_main.png" width="967" height="820" border="0">
+</td></tr></table>
+</p>
+<p>
+<h2>Select a Light Leak Effect</h2>
+</p>
+<p>
+<ul>
+<li><strong>Choose a Light Leak Effect</strong> - To get started, you'll need to choose the light leak look you'd like to start working with. To do so, simply click from any of the thumbnails in the grey area in the left side of the plug-in. You can also use the left and right arrows to navigate through all of the light leak effect options.
+<br><br>
+Once you've selected the desired light leak you'd like to use, you can proceed to fine-tune using the plug-in controls. Additionally, you can select a different light leak style from the thumbnail palette at any time and your current settings will be applied to the new light leak.</li>
+</ul>
+</p>
+<p>
+<h2>Adjust the Light Leak Properties</h2><br>
+We've given you the ability to adjust exactly how the light leak is applied to your image for even more versatility.
+</p>
+<p>
+<ul>
+<li><strong>Light Leak Effect Size</strong> - Using the slider control, you may enlarge or reduce the scale of the selected light leak effect by moving the arrow below or simply enter a number in the text entry field to the right. By default the light leak effect is applied at the smallest scale to the image.</li>
+<br>
+<li><strong>Light Leak Intensity</strong> - You may increase or fade the overall light leak effect by moving the slider control or by simply entering a number in the text entry field to the right.</li>
+<p>
+<table width="961"><tr><td>
+<img src="images/llk_intensity.png" width="961" height="286" border="0">
+</td></tr></table>
+</p>
+<li><strong>Light Leak Saturation</strong> - You may increase or decrease the saturation of the light leak coloration by moving the slider control or by simply entering a number in the text entry field to the right. Simply click the color swatch icon to the right of the Saturation slider to launch the color picker to select the light leak color you'd like to apply to your image.</li>
+<p>
+<table width="961"><tr><td>
+<img src="images/llk_saturation.png" width="961" height="286" border="0">
+</td></tr></table>
+</p>
+<p>
+<h2>Adjust the Light Leak Orientation</h2>
+</p>
+<p>
+<ul>
+<li><strong>Flip Horizontal</strong> - Click the checkbox to flip the light leak effect horizontally.</li>
+<br>
+<li><strong>Flip Vertical</strong> - Click the checkbox to flip the light leak effect vertically.</li>
+<br>
+<li><strong>Invert Light Leak</strong> - Click the invert checkbox to inverse the light leak effect.</li>
+<br>
+<li><strong>Rotate</strong> - Click either rotate button to rotate the light leak effect in 90 degree increments.</li>
+</ul>
+</p>
+<p>
+<h2>Working with the Preview Window</h2><br>
+<ul>
+<li><strong>Preview Options</strong> - Above the preview window at left, you'll notice some viewing options. By default the Composite option is selected to show you all Light Leaker effects applied to the image. At any time you can click the Original option to toggle between the unaffected image and a preview of the filtered image with the effects applied.</li>
+<br>
+<li><strong>Reset All</strong> - Reset All is located above the preview window on the right. When clicked, it will reset all controls to their default state.</li>
+<br>
+<li><strong>Magnifying the Preview</strong> - Below the preview window, you'll see the magnification controls. By clicking the appropriate icon (- or +), you can decrease or increase the magnification of the preview window. The current level of magnification is shown between the magnification icons. If you prefer keyboard shortcuts, you can simply hold down the Command (Apple) key (or the Ctrl key on Windows) then press the plus sign (+) or the minus sign (-) respectively to zoom in or out of your image.</li>
+<br>
+<i><b><font color="#8c8c8c">Pro Tip</font></b></i> - Adobe Photoshop users may use keyboard shortcuts to instantly change the zoom magnification. To fit the full image within the preview window, simply hold down the Command (Apple) key (or the Ctrl key on Windows) then press the number zero (0) on the keyboard. To view the image at 100% size, hold down the Command (Apple) key (or the Ctrl key on Windows) then press the number one (1) on the keyboard.
+</li>
+<br><br>
+<li><strong>Moving the Preview</strong> - When you have increased magnification and wish to view the texture effect on the rest of the image not visible in the preview window, simply move your mouse into the preview window and click and drag your image around to reveal the effect on your image.</li>
+<br>
+<li><strong>Generate Effect in New Layer Above*</strong> - Simply enable this option if you want the plug-in to duplicate your original image and apply the filtered version on a new layer above the original image leaving it intact.
+<br><br>
+<i><b><font color="#8c8c8c">* NOTE</font></b></i> - This option is only displayed in certain versions of Adobe Photoshop and other imaging applications that support layering and automation.
+</li>
+</ul>
+</p>
+<p>
+<h2>Click Here to learn about the <a href="advanced.html">Advanced Techniques</a> . . .</h2>
+</p>          
+          <!-- EDITABLE CONTENT END --> 
+        </div>
+      </div>
+    </div>
+    <div id="bg-bottom-spacer">&nbsp;</div>
+  </div>
+</div>
+</body>
+</html>

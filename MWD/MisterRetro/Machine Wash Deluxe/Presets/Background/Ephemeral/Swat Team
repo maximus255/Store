@@ -1,0 +1,23 @@
+MachineWashDelux Press Preset;
+Version 2;
+;------Background parameters------
+nOkB 1 				;Use Background 
+NFkB Flyswatter.mwd 				;Name of Background 
+fSLN 0 				;Surface in new layer 
+kBLN 0 				;Background in new layer 
+nEkB 0 				;Background Entire whole 
+HpFB 0 				;Background Flip Hor. 
+VpFB 0 				;Background Flip Ver. 
+vnIB 1 				;Background Invert 
+lcSB 0 				;Background Scale
+tLHB 100 				;Background Highlight
+tdMB 100 				;Background Midtone
+wdSB 100 				;Background Shadow
+euHB 46 				;Background Hue
+hnEB 1 				;Background Enhanced Mode
+lCHB 6665232 				;Background Highlight Color
+lCMB 4215296 				;Background Midtone Color
+lCSB 0 				;Background Shadow Color
+WkLI 0 				;Is Wash Linked
+SkLI 0 				;Is Surface Linked
+BkLI 0 				;Is Background Linked
