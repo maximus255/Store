@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84CF13BC20B43E4C0026701C"
-               BuildableName = "LightLeakInstaller.app"
-               BlueprintName = "TestXNib"
-               ReferencedContainer = "container:TestXNib.xcodeproj">
+               BuildableName = "LaplacianBlendInstaller.app"
+               BlueprintName = "EngraverAIInstaller"
+               ReferencedContainer = "container:LaplacianBlend.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,27 +26,14 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "84CF13BC20B43E4C0026701C"
-            BuildableName = "LightLeakInstaller.app"
-            BlueprintName = "TestXNib"
-            ReferencedContainer = "container:TestXNib.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -58,13 +45,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84CF13BC20B43E4C0026701C"
-            BuildableName = "LightLeakInstaller.app"
-            BlueprintName = "TestXNib"
-            ReferencedContainer = "container:TestXNib.xcodeproj">
+            BuildableName = "HDR_EnhancedAEInstaller.app"
+            BlueprintName = "HDR_EnhancedAEInstaller"
+            ReferencedContainer = "container:HDR_EnhancedAE.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -77,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84CF13BC20B43E4C0026701C"
-            BuildableName = "LightLeakInstaller.app"
-            BlueprintName = "TestXNib"
-            ReferencedContainer = "container:TestXNib.xcodeproj">
+            BuildableName = "LaplacianBlendInstaller.app"
+            BlueprintName = "EngraverAIInstaller"
+            ReferencedContainer = "container:LaplacianBlend.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -87,7 +72,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

@@ -1,8 +1,8 @@
 ;MachineWashDeluxe Installation parameters
 Version = 2.0 ; current version
 NeededSize = 7000000; required space in Bytes 
-Copyright = ©2009-2023 MisterRetro; copyright
-Intro = The plug-in for Adobe Photoshop CS5-CC2023 will be installed; introduction
+Copyright = ©2009-2024 MisterRetro; copyright
+Intro = The plug-in for Adobe Photoshop CS5-CC2025 will be installed; introduction
 CopyIntro = Installing Machine Wash Deluxe
 Subfolder = MisterRetro;the subfolder for contents
 Congratulation = Congratulations! The software has been successfully installed!

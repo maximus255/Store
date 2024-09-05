@@ -15,10 +15,8 @@
 		84CF13D620B44D570026701C /* viewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84CF13D520B44D570026701C /* viewController.mm */; };
 		84CF13DD20B458EB0026701C /* introController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84CF13DC20B458EB0026701C /* introController.mm */; };
 		84CF13E020B461A30026701C /* AgreementController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84CF13DF20B461A30026701C /* AgreementController.mm */; };
-		84CF13F920B486FC0026701C /* CC in Resources */ = {isa = PBXBuildFile; fileRef = 84CF13EC20B486CC0026701C /* CC */; };
 		84CF13FC20B486FC0026701C /* MisterRetro in Resources */ = {isa = PBXBuildFile; fileRef = 84CF13EF20B486DC0026701C /* MisterRetro */; };
 		84CF140020B486FC0026701C /* Scripts in Resources */ = {isa = PBXBuildFile; fileRef = 84CF13F320B486E80026701C /* Scripts */; };
-		84CF140120B486FC0026701C /* AutomationCS5 in Resources */ = {isa = PBXBuildFile; fileRef = 84CF13F420B486E80026701C /* AutomationCS5 */; };
 		84CF140820B4876D0026701C /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CF140620B4876C0026701C /* log.cpp */; };
 		84CF140B20B487A90026701C /* MWD.icns in Resources */ = {isa = PBXBuildFile; fileRef = 84CF140A20B487A80026701C /* MWD.icns */; };
 		84CF140E20B4885B0026701C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CF140D20B4885B0026701C /* Security.framework */; };
@@ -54,10 +52,8 @@
 		84CF13DE20B461A30026701C /* AgreementController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgreementController.h; sourceTree = "<group>"; };
 		84CF13DF20B461A30026701C /* AgreementController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AgreementController.mm; sourceTree = "<group>"; };
 		84CF13E820B486B70026701C /* UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UI.h; sourceTree = "<group>"; };
-		84CF13EC20B486CC0026701C /* CC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CC; sourceTree = "<group>"; };
 		84CF13EF20B486DC0026701C /* MisterRetro */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MisterRetro; sourceTree = "<group>"; };
 		84CF13F320B486E80026701C /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
-		84CF13F420B486E80026701C /* AutomationCS5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AutomationCS5; sourceTree = "<group>"; };
 		84CF140620B4876C0026701C /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
 		84CF140720B4876D0026701C /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
 		84CF140A20B487A80026701C /* MWD.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MWD.icns; sourceTree = "<group>"; };
@@ -107,8 +103,6 @@
 				84D7CF9A22C14564009BD455 /* CustomInfoAboutSets.cpp */,
 				84D7CF9922C14563009BD455 /* CustomInfoAboutSets.h */,
 				84CF141F20B496180026701C /* MainMenu.xib */,
-				84CF13F420B486E80026701C /* AutomationCS5 */,
-				84CF13EC20B486CC0026701C /* CC */,
 				84CF13EF20B486DC0026701C /* MisterRetro */,
 				84CF13F320B486E80026701C /* Scripts */,
 				84CF13E120B486B70026701C /* Engine */,
@@ -218,7 +212,7 @@
 				TargetAttributes = {
 					84CF13BC20B43E4C0026701C = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -245,13 +239,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84CF140120B486FC0026701C /* AutomationCS5 in Resources */,
 				84CF140020B486FC0026701C /* Scripts in Resources */,
 				84D7CFA222C14D14009BD455 /* MWDs in Resources */,
 				84CF142420B49AE60026701C /* MacInstallerLeft.png in Resources */,
 				84CF13C420B43E4C0026701C /* Assets.xcassets in Resources */,
 				84CF140B20B487A90026701C /* MWD.icns in Resources */,
-				84CF13F920B486FC0026701C /* CC in Resources */,
 				84CF13FC20B486FC0026701C /* MisterRetro in Resources */,
 				84533A422683B78500AA2727 /* M1 in Resources */,
 				84533A432683B78500AA2727 /* AutomationM1 in Resources */,
@@ -341,7 +333,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -364,7 +356,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				VALID_ARCHS = "x86_64 i386";
+				VALID_ARCHS = "x86_64 arm64";
 			};
 			name = Debug;
 		};
@@ -398,7 +390,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -413,8 +406,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
 				SDKROOT = macosx;
-				VALID_ARCHS = "x86_64 i386";
+				VALID_ARCHS = "x86_64 arm64";
 			};
 			name = Release;
 		};
@@ -423,7 +417,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Installer/TestXNib.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8DG2R8LWK6;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -433,6 +428,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = adobefx.com.MWDInstall;
 				PRODUCT_NAME = MachineWashDeluxeInstaller;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -441,7 +437,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Installer/TestXNib.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8DG2R8LWK6;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -449,8 +447,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
 				PRODUCT_BUNDLE_IDENTIFIER = adobefx.com.MWDInstall;
 				PRODUCT_NAME = MachineWashDeluxeInstaller;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

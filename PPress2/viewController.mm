@@ -671,10 +671,10 @@ BYTE _State = STATE_INTRO;
     if (OSXVersionBig>=101300)//10.13
         _BigSur = true;
     
-    if (_BigSur)
+    //if (_BigSur)
         strcat(pluginSource,"M1/");
-    else
-        strcat(pluginSource,"CC/");
+    //else
+    //  strcat(pluginSource,"CC/");
     
 #ifdef _LOG_
     {
@@ -696,10 +696,10 @@ BYTE _State = STATE_INTRO;
 #ifdef _AUTOMATION_
     strcpy(automationSource,FullPath);
     //[Max 2021.06.18
-    if (_BigSur)
+    //if (_BigSur)
         strcat(automationSource,"/Contents/Resources/AutomationM1/");
-    else
-        strcat(automationSource,"/Contents/Resources/AutomationCS5/");
+    //else
+    //  strcat(automationSource,"/Contents/Resources/AutomationCS5/");
     strcat(automationSource, _StoreFolder);
 #endif//_AUTOMATION_
     

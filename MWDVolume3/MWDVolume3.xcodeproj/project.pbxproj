@@ -360,8 +360,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = adobefx.com.MWDVolume3;
 				PRODUCT_NAME = MWDVolume3;
+				VALID_ARCHS = "x86_64 arm64";
 			};
 			name = Debug;
 		};

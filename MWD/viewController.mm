@@ -732,15 +732,15 @@ int _NeedToCopyTextures = 1;
     
     strcpy(pluginSource,FullPath);
     strcat(pluginSource,"/Contents/Resources/");
-    //[Max 2021.06.18
-    bool _BigSur = false;
-    if (OSXVersionBig>=101300)//10.13
-        _BigSur = true;
+    //[Max 2024.05.04 //2021.06.18
+    //bool _BigSur = true;
+    //if (OSXVersionBig>=101300)//10.13
+    //    _BigSur = true;
     
-    if (_BigSur)
+    //if (_BigSur)
         strcat(pluginSource,"M1/");
-    else
-        strcat(pluginSource,"CC/");
+    //else
+    //    strcat(pluginSource,"CC/");
     
 //    if (isCC2014)
 //        strcat(pluginSource,"CC/");
@@ -751,11 +751,11 @@ int _NeedToCopyTextures = 1;
     
 #ifdef _AUTOMATION_
     strcpy(automationSource,FullPath);
-    //[Max 2021.06.18
-    if (_BigSur)
+    //[Max 2024.05.04 //2021.06.18
+    //if (_BigSur)
         strcat(automationSource,"/Contents/Resources/AutomationM1/");
-    else
-        strcat(automationSource,"/Contents/Resources/AutomationCS5/");
+    //else
+    //    strcat(automationSource,"/Contents/Resources/AutomationCS5/");
     strcat(automationSource, _StoreFolder);
 #endif//_AUTOMATION_
     
