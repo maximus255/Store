@@ -579,9 +579,6 @@ BYTE _State = STATE_INTRO;
     [_nextButton setEnabled:NO];
     [_prevButton setEnabled:NO];
     
-    //[progressIndicator setUsesThreadedAnimation:YES];
-    //[progressIndicator startAnimation:nil];
-    
     NSString *sourcePath = [NSString stringWithCString:SourcePath encoding:NSUTF8StringEncoding];
     
     //add MisterRetro end
@@ -591,9 +588,7 @@ BYTE _State = STATE_INTRO;
     long len2 = strlen(_StoreFolder);
     if (len>=len2)
         if (strcasecmp(&Path1[len - len2], _StoreFolder)!=0)
-            //if (strrstr(_Path,_StoreFolder)==NULL)
         {
-            
             if (len>0)
             {
                 if (Path1[len-1]!='/')
@@ -602,7 +597,6 @@ BYTE _State = STATE_INTRO;
             strcat(Path1,_StoreFolder);
         }
     
-    //[Max 2021.06.18
     NSDictionary *attributes =  [NSDictionary dictionaryWithObject:[NSNumber numberWithShort:0777] forKey:NSFilePosixPermissions];
     char PathRoot[1024];
     strcpy(PathRoot,Path1);
@@ -617,13 +611,9 @@ BYTE _State = STATE_INTRO;
         
         //set 777 attributes
         [fileManager setAttributes:attributes ofItemAtPath:PRoot error:nil];
-        
     }
     
     destinationPath = [NSString stringWithCString:Path1 encoding:NSUTF8StringEncoding];
-    
-    //[Max 2021.06.18
-    //NSDictionary *attributes =  [NSDictionary dictionaryWithObject:[NSNumber numberWithShort:0777] forKey:NSFilePosixPermissions];
     
     NSError *error;
     _Log("Check MisterRetro folder exist")
@@ -633,20 +623,6 @@ BYTE _State = STATE_INTRO;
         return;
     }
     
-    //check CC214 and later or not
-#ifndef _CC_ONLY_ // CS5 and upper
-    BOOL isCC2014;
-    _Log("before GenerateCommonPluginPath")
-    NSString *commonPath = GenerateCommonPluginPath();
-    if ([destinationPath rangeOfString:commonPath].location != NSNotFound)
-        //if ([sourcePath containsString:commonPath])//for 10.8 and later
-    {
-        isCC2014 = YES;
-    }
-    else
-        isCC2014 = checkCC2014(_Path);
-#endif//_CC_ONLY_
-    
     //make source paths
     char pluginSource[1024];
 #ifdef _AUTOMATION_
@@ -654,29 +630,15 @@ BYTE _State = STATE_INTRO;
 #endif//_AUTOMATION_
     strcpy(pluginSource,FullPath);
     strcat(pluginSource,"/Contents/Resources/");
-    //[Max 2021.06.18
-    //bool _BigSur = true;
-    //if (OSXVersionBig>=101300)//10.13
-    //    _BigSur = true;
-    
     //if (_BigSur)
         strcat(pluginSource,"M1/");
     //else
     //    strcat(pluginSource,"CC/");
     
-//#ifndef _CC_ONLY_//only CS5 and upper
-//    if (isCC2014)
-//        strcat(pluginSource,"CC/");
-//    else
-//        strcat(pluginSource,"CS5/");
-//#else//_CC_ONLY_
-//    strcat(pluginSource,"CC/");
-//#endif//_CC_ONLY_
     strcat(pluginSource, _StoreFolder);
     
 #ifdef _AUTOMATION_
     strcpy(automationSource,FullPath);
-    //[Max 2021.06.18
     if (_BigSur)
         strcat(automationSource,"/Contents/Resources/AutomationM1/");
     else
@@ -701,26 +663,17 @@ BYTE _State = STATE_INTRO;
 #ifdef _AUTOMATION_
     uint64_t automationSize = [self folderSizeRecurent:[NSString stringWithCString:automationSource encoding:NSUTF8StringEncoding]];
 #endif//_AUTOMATION_
-    //uint64_t tmp = [self folderSizeRecurent:sourcePath];
-    //uint64_t folderSize = [self folderSize:sourcePath];
     uint64_t folderSize = [self folderSizeRecurent:sourcePath];
     NSLog(@"folder size = %llu",folderSize);
     _LogInt("folder size is %d",folderSize)
     
     
-    //NSFileManager *fileManager = [NSFileManager defaultManager];
-    //uint64_t fileSize = [[fileManager attributesOfItemAtPath:sourcePath error:nil] fileSize];
 #ifdef _AUTOMATION_
     [progressIndicator setMaxValue:(double)(folderSize*1.05 + pluginSize + automationSize)];
 #else
     [progressIndicator setMaxValue:(double)(folderSize*1.05 + pluginSize )];
 #endif//_AUTOMATION_
     [progressIndicator setDoubleValue:0.0];
-    
-    //set 777 attributes
-    //[Max 2018.06.12
-    //NSDictionary *attributes;
-    //[attributes setValue:[NSNumber numberWithShort:0777] forKey:NSFilePosixPermissions];
     
     ///Copying Plug-in
     _Log("before copying plug-in")
@@ -741,12 +694,6 @@ BYTE _State = STATE_INTRO;
         [self EndCopying:NO error:error];
         return;
     }
-    
-    //[Max 2018.06.12
-    //set 777 attributes
-    //[fileManager setAttributes:attributes ofItemAtPath:destinationPath error:nil];
-    
-   
     
     [progressIndicator setDoubleValue:(double)pluginSize];
     [progressIndicator setNeedsDisplay:YES];
@@ -774,13 +721,8 @@ BYTE _State = STATE_INTRO;
                    ^{
                        
                        NSError *error;
-                       //NSDictionary *sourceAttributes = [fileManager fileAttributesAtPath:sourcePath traverseLink:YES];
-                       //NSNumber *sourceFileSize;
-                       
-                       
                        
                        BOOL success;
-                       //if ([fileManager copyItemAtPath:sourcePath toPath:destinationPath error:&error])
 #ifdef _AUTOMATION_
                        curFileSize = (pluginSize+automationSize);//0;
 #else
@@ -798,12 +740,9 @@ BYTE _State = STATE_INTRO;
                        }
                        
                        dispatch_async(dispatch_get_main_queue(), ^{
-                           //[progressIndicator stopAnimation:nil];
                            [self EndCopying:success error:error];
                        });//dispatch_get_main_queue
-                       
                    });//dispatch_async
-    
 }
 -(void)EndCopying:(BOOL)Success error:(NSError*)error
 {
