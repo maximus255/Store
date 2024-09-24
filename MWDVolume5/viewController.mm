@@ -19,7 +19,6 @@
 #include <string.h>
 #include <stdio.h>
 #include "log.h"
-//void DebugAlert(char *str);
 BOOL checkCC2014(char *path);
 
 void NSDebugAlert(NSString* Mes, NSString *Title, NSAlertStyle style);

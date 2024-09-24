@@ -15,7 +15,7 @@
 #include "log.h"
 //#include "LRFind.h"
 //#include <pthread.h>
-int YesNoAlert(char *msg);
+int YesNoAlert(const char *msg);
 char FullPath[1024],ScriptsPath[1024];
 char SourcePath[1024];
 
@@ -130,7 +130,7 @@ void SeekOnStartStr(char *  &s)
 }
 void SeekOnEndStr(char *  &s)
 {
-int i = strlen(s) - 1;
+int i = (int)strlen(s) - 1;
   while ((s[i]==' ')&&(i>=0))
   {
      s[i] = 0;
@@ -232,7 +232,7 @@ void StrGetFloat(char *sw,  double *z)
     int i = 0;
     SeekOnStartStr(sw);
     strcpy(Dig,"");
-    int len = strlen(sw);
+    int len = (int)strlen(sw);
     
     while ((i<64)&&(i<len))
     {
@@ -284,16 +284,16 @@ inline BYTE toHex(const BYTE &x)
 //Replace only %20
 char* URLEncode2(char* sIn)
 {
-    char* sOut;
+    char* sOut = NULL;
 	
     int k;
-    const int nLen = strlen(sIn) + 1;
+    const int nLen = (int)strlen(sIn) + 1;
 
-    register BYTE* pOutTmp = NULL;
+    BYTE* pOutTmp = NULL;
     BYTE* pOutBuf = NULL;
-    register BYTE* pInTmp = NULL;
+    BYTE* pInTmp = NULL;
     BYTE* pInBuf =(BYTE*)sIn;
-    BYTE b = 0;
+    //BYTE b = 0;
 
     //count not alphanumeric characters
 
@@ -369,16 +369,16 @@ if (!sIn)
 if (!*sIn)
 	return NULL;
 //]	
-    char* sOut;
+    char* sOut=NULL;
 	
     int k;
-    const int nLen = strlen(sIn) + 1;
+    const int nLen = (int)strlen(sIn) + 1;
 
-    register BYTE* pOutTmp = NULL;
+    BYTE* pOutTmp = NULL;
     BYTE* pOutBuf = NULL;
-    register BYTE* pInTmp = NULL;
+    BYTE* pInTmp = NULL;
     BYTE* pInBuf =(BYTE*)sIn;
-    BYTE b = 0;
+    //BYTE b = 0;
 
     //count not alphanumeric characters
 
@@ -438,7 +438,7 @@ void AddSlashIfNeed(char *str)
 {
 	if (!str)
 		return;
-	int len = strlen(str);
+	int len = (int)strlen(str);
 	if (len<=0) return;
 	if ((str[len-1]=='/')||(str[len-1]=='\\'))
 		return;

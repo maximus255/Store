@@ -279,9 +279,12 @@ BOOL checkCC2014(char *path);
     }//length<=0
     [panel setDirectoryURL:[NSURL fileURLWithPath:aplicationDirectory]];
     
-    if( [panel runModalForDirectory:aplicationDirectory file:nil] == NSOKButton )
+    //if( [panel runModalForDirectory:aplicationDirectory file:nil] == NSOKButton )
+    if ([panel runModal] == NSOKButton )
     {
-        NSString *path = [panel directory];
+        //NSString *path = [panel directory];
+        //NSString *path = [[panel directoryURL] absoluteString];
+        NSString *path = [[panel directoryURL] path];
         
         self.destinationPath.stringValue = path;
         strcpy(_Path,[path cStringUsingEncoding:NSUTF8StringEncoding]);

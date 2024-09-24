@@ -140,7 +140,7 @@ extern UInt64	_NeededSpace;
 extern char _Version[];
 extern char _Copyright[],_Intro[],_CopyIntro[],_StoreFolder[],_Congratulation[];
 
-void DebugAlert(char *str);
+void DebugAlert(const char *str);
 void ShowCurPannel();
 void PressNext();
 void PressPrev();

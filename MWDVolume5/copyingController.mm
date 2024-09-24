@@ -25,10 +25,9 @@ NSProgressIndicator *progressIndicator;
 -(void) awakeFromNib
 {
     _Log("awakeFromNib CopyingController")
-    [self viewDidLoad1];//for before OSX10.10
+    [self viewDidLoad1];
 }
 - (void)viewDidLoad1 {
-    //[super viewDidLoad];//10.10
     // Do view setup here.
     NSLog(@"Copying Load");
     _Log("viewDidLoad CopyingController")
@@ -44,14 +43,12 @@ NSProgressIndicator *progressIndicator;
     NSLog(@"Source %s",SourcePath);
     NSLog(@"Destination %s",_Path);
     
-    
 }
 
 - (void)viewDidAppear1
 {
     _Log("viewDidAppear CopyingController")
     [self.delegate StartCopying];
-        
 
 }
 @end

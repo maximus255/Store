@@ -97,5 +97,5 @@ typedef struct _HDDInfo
 //[Max 2016.06.04
 void AddSlashIfNeed(char *str);
 
-void DebugAlert(char *str);
+void DebugAlert(const char *str);
 #endif //_ENGINE_

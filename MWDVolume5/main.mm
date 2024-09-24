@@ -28,9 +28,9 @@ char _Congratulation[512];
 SInt32 OSXVersion = 0x1000;
 char _UsePPC = -1;
 CFBundleRef widgetBundle;
-void DebugAlert(char *str);
-int YesNoAlert(char *msg);
-int RepeatCancelAlert(char *msg);
+void DebugAlert(const char *str);
+int YesNoAlert(const char *msg);
+int RepeatCancelAlert(const char *msg);
 extern char FullPath[1024],ScriptsPath[1024];
 //extern FSRef _aSourceFolder;
 //extern FSRef *_SourceFolder;//[Max 2012.12.11
@@ -234,7 +234,7 @@ int main(int argc, const char * argv[])
     if (!GetPaths())
     {
         _Log("GetPaths false")
-        return false;
+        return 0;
     }
     
     _Log("before load XIB")
@@ -245,7 +245,7 @@ int main(int argc, const char * argv[])
     _Log("before NSApplicationMain")
     return NSApplicationMain(argc, argv);
 }
-void DebugAlert(char *str)
+void DebugAlert(const char *str)
 {
     NSAlert *alert = [[NSAlert alloc] init];
     [alert addButtonWithTitle:@"OK"];
@@ -256,7 +256,7 @@ void DebugAlert(char *str)
     [alert runModal];
     //[alert release];
 }
-int YesNoAlert(char *msg)
+int YesNoAlert(const char *msg)
 {
     _Log("yesnoalert x86_64")
     NSAlert *alert = [[NSAlert alloc] init];
@@ -295,7 +295,7 @@ int YesNoAlert(char *msg)
 }
 
 bool is_cocoa_initialized = NO;
-int RepeatCancelAlert(char *msg)
+int RepeatCancelAlert(const char *msg)
 {
     _Log("yesnoalert x86_64")
     NSAlert *alert = [[NSAlert alloc] init];
