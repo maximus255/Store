@@ -174,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84CF13BC20B43E4C0026701C /* TestXNib */ = {
+		84CF13BC20B43E4C0026701C /* MWDVolume03 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84CF13CE20B43E4C0026701C /* Build configuration list for PBXNativeTarget "TestXNib" */;
+			buildConfigurationList = 84CF13CE20B43E4C0026701C /* Build configuration list for PBXNativeTarget "MWDVolume03" */;
 			buildPhases = (
 				84CF13B920B43E4C0026701C /* Sources */,
 				84CF13BA20B43E4C0026701C /* Frameworks */,
@@ -187,7 +187,7 @@
 			);
 			dependencies = (
 			);
-			name = TestXNib;
+			name = MWDVolume03;
 			productName = TestXNib;
 			productReference = 84CF13BD20B43E4C0026701C /* MWDVolume3.app */;
 			productType = "com.apple.product-type.application";
@@ -198,7 +198,7 @@
 		84CF13B520B43E4C0026701C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = alphaplugins;
 				TargetAttributes = {
 					84CF13BC20B43E4C0026701C = {
@@ -220,7 +220,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84CF13BC20B43E4C0026701C /* TestXNib */,
+				84CF13BC20B43E4C0026701C /* MWDVolume03 */,
 			);
 		};
 /* End PBXProject section */
@@ -306,6 +306,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -313,8 +314,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -324,6 +327,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -353,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Installer/TestXNib.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8DG2R8LWK6;
@@ -378,7 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		84CF13CE20B43E4C0026701C /* Build configuration list for PBXNativeTarget "TestXNib" */ = {
+		84CF13CE20B43E4C0026701C /* Build configuration list for PBXNativeTarget "MWDVolume03" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84CF13CF20B43E4C0026701C /* Debug */,

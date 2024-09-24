@@ -356,6 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 8DG2R8LWK6;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Installer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LINK_WITH_STANDARD_LIBRARIES = YES;

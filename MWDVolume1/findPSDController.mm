@@ -18,6 +18,9 @@ BOOL checkCC2014(char *path);
     NSArray *photoshopsArray;
     BOOL hasCC;
     int previous_choose;
+    //[Max 2023.04.04
+    BOOL hasAffinity;
+    NSString *affinityPath;
 }
 
 @end
@@ -82,6 +85,25 @@ BOOL checkCC2014(char *path);
     {
         [Photoshops insertObject:@"Common Plug-ins Folder (Recommended)" atIndex:0];
     }
+    
+    //[Max 2023.04.04
+    //find affinity
+    hasAffinity = NO;
+    paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    if (paths.count>0){
+        documentsDirectory = [paths objectAtIndex:0];//paths[0];
+        documentsDirectory = [documentsDirectory stringByAppendingPathComponent:@"Application Support/Affinity Photo 2/Plugins"];
+        
+        BOOL isDir = YES;
+        BOOL isExist = [[NSFileManager defaultManager] fileExistsAtPath:documentsDirectory isDirectory:&isDir];
+        if (isExist){
+            [Photoshops addObject:@"Affinity Photo 2 Plugins folder"];
+            hasAffinity = YES;
+            affinityPath = documentsDirectory;
+        }
+    }
+    
+    
     //NSLog(@"%@",Photoshops);
     photoshopsArray = [Photoshops copy];
     [_photoshopsTable reloadData];
@@ -140,6 +162,10 @@ BOOL checkCC2014(char *path);
         return;
     }
     NSString *path;
+    //[Max 2023.04.04
+    if ((hasAffinity)&&(row == [photoshopsArray count]-1)){
+        path = affinityPath;
+    }else
     if ((hasCC)&&(row==0))//common recommended
     {
         path = GenerateCommonPluginPath();

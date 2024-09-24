@@ -67,7 +67,7 @@ int IsUpdatingDBHere(char *aPath)
 	_Log(aPath)
 	//MessageBox(0,"IsUpdatingDBHere Start","",0);
 	strcpy(FullPath,aPath);
-	int len = strlen(FullPath);
+	int len = (int)strlen(FullPath);
 	
     /*if ((FullPath[len-1]!='/')&&(FullPath[len-1]!='\\'))
 	{
@@ -78,19 +78,10 @@ int IsUpdatingDBHere(char *aPath)
     bool needAdd = true,needAdd2=true;
     long len2 = strlen(_StoreFolder);
     if (len>=len2)
-        if (strcasecmp(&FullPath[len - len2], _StoreFolder)!=0)
-            //if (strrstr(_Path,_StoreFolder)==NULL)
+        if (strcasecmp(&FullPath[len - len2], _StoreFolder)==0)
         {
-            
-            /*if (len>0)
-            {
-                if (FullPath[len-1]!='/')
-                    strcat(FullPath,"/");
-            }*/
-            //strcat(FullPath,_StoreFolder);
-        }
-        else
             needAdd2 = false;
+        }
     
     if (len>0)
     {
@@ -100,14 +91,14 @@ int IsUpdatingDBHere(char *aPath)
     if (needAdd2)
         strcat(FullPath,_StoreFolder);
     
-    len = strlen(FullPath);
+    len = (int)strlen(FullPath);
     
     if ((FullPath[len-1]!='/')&&(FullPath[len-1]!='\\'))
     {
      strcat(FullPath,"/");
     }
     char subStr[] = "Machine Wash Deluxe/";
-    int len1 = strlen(subStr);
+    int len1 = (int)strlen(subStr);
     
     if (len>len1)
     {
@@ -164,7 +155,7 @@ int CreateDBIfNeed(char *FullPath,char *LastVers)
 	{
 		_Log("hFile is found")
 		fseek(hFile,0,SEEK_END);
-		FileSize = ftell(hFile);
+		FileSize = (int)ftell(hFile);
 		fseek(hFile,0,SEEK_SET);
 		StrBuf = (char*)malloc(FileSize+2);
 		if (StrBuf)
@@ -224,7 +215,7 @@ int CreateDBIfNeed(char *FullPath,char *LastVers)
 		{
 			_Log("hFile created")
 			time( &cur_time);
-			fprintf(hFile,"datestr:%u;",cur_time-60*60*24);
+            fprintf(hFile,"datestr:%ld;",cur_time-60*60*24);
 
 			fprintf(hFile,"lastvers:%s;",LastVers);
 
@@ -266,7 +257,7 @@ void RefreshUpdatingDate(char *UpdatingDBFile)
 	{
 		_Log("hFile !=NULL")
 	fseek(hFile,0,SEEK_END);
-	FileSize = ftell(hFile);
+	FileSize = (int)ftell(hFile);
 	fseek(hFile,0,SEEK_SET);
 		//MessageBox(0,"before alloc","",0);
 	    _Log("before malloc")
@@ -291,7 +282,7 @@ void RefreshUpdatingDate(char *UpdatingDBFile)
 
 				time( &cur_time);
 				//MessageBox(0,"before fprintf 1","",0);
-				fprintf(hFile,"datestr:%u;",cur_time-60*60*24);
+				fprintf(hFile,"datestr:%ld;",cur_time-60*60*24);
 
 				///save all result text after "lastvers:" tag
 				//MessageBox(0,StrBuf,"StrBuf",0);
@@ -349,7 +340,7 @@ void AddSetsInstallInfo( char *FullPath, char* aSetUID, char* aSetName, int aDow
 	char *strwrk;
 	char NewStr[16],*newstrwrk = NewStr;
 	
-	char StrDbg[256];
+	//char StrDbg[256];
 	//]
 	//MessageBox(0,FullPath,"test",0);
 	_Log("AddSetsInstallInfo begin")
@@ -360,7 +351,7 @@ void AddSetsInstallInfo( char *FullPath, char* aSetUID, char* aSetName, int aDow
 		_Log("hFile!=NULL")
 		NeedToAppend = 1;
 		fseek(hFile,0,SEEK_END);
-		FileSize = ftell(hFile);
+		FileSize = (int)ftell(hFile);
 		fseek(hFile,0,SEEK_SET);
 		StrBuf = (char*)malloc(FileSize+2);
 		if (StrBuf)
@@ -382,7 +373,7 @@ void AddSetsInstallInfo( char *FullPath, char* aSetUID, char* aSetName, int aDow
 				MessageBox(0,StrDbg,"",0);
 			}*/
 			_Log("before parsing installedset:")
-			while(str=strstr(str,"installedset:"))
+            while((str=strstr(str,"installedset:")))
 			{
 				str = strstr(str,":");
 				if (!str) break;
