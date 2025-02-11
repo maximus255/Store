@@ -2,7 +2,7 @@
 Version = 1.0 ; current version
 NeededSize = 700000; required space in Bytes 
 Copyright = ©2025, AlphaPlugins; copyright
-Intro = The plug-in for Adobe After Effects/PremierePro will be installed; introduction
+Intro = The OpenFX plug-in for Resolve DaVinci will be installed; introduction
 CopyIntro = Now Installing HDR Enhanced
 Subfolder = AlphaPlugins;the subfolder for contents
 Congratulation = Congratulations! The software has been successfully installed!
