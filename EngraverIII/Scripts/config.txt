@@ -1,8 +1,8 @@
 ;EngraverIII Installation parameters
 Version = 1.0 ; current version
 NeededSize = 700000; required space in Bytes 
-Copyright = ©2001-2023, AlphaPlugins; copyright
-Intro = The plug-in for Adobe Photoshop CC..CC2023 (Intel/M1) will be installed; introduction
+Copyright = ©2001-2024, AlphaPlugins; copyright
+Intro = The plug-in for Adobe Photoshop CC..CC2024 (Intel/M1) will be installed; introduction
 CopyIntro = Now Installing Engraver III
 Subfolder = AlphaPlugins;the subfolder for contents
 Congratulation = Congratulations! The software has been successfully installed!

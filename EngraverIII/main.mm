@@ -135,7 +135,7 @@ int main(int argc, const char * argv[])
     }
 #endif
     
-    //#define NOAUTHORIZE
+    #define NOAUTHORIZE
 #ifndef NOAUTHORIZE
     //check --self-repair
     Boolean NeedAuthorize = 1;

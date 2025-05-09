@@ -1,7 +1,7 @@
 ;PermanentPress2 Installation parameters
 Version = 1.0 ; current version
 NeededSize = 7000000; required space in Bytes 
-Copyright = ©2008-2024 MisterRetro; copyright
+Copyright = ©2008-2025 MisterRetro; copyright
 Intro = The plug-in for Adobe Photoshop CS5-CC2025 will be installed; introduction
 CopyIntro = Now Installing PermanentPress2
 Subfolder = MisterRetro;the subfolder for contents
